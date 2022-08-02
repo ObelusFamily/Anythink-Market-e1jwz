@@ -11,3 +11,11 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 ## First setup
 
 **[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+
+## local environment setup
+
+1. install docker
+2. go to root directory and open up terminal
+3. run docker-compose up
+
+-- it will create a container and it will start running on localhost
