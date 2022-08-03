@@ -149,7 +149,7 @@ router.post("/", auth.required, function (req, res, next) {
       var item = new Item(req.body.item);
 
       item.seller = user;
-      !item.image ? "placeholder" : item.image;
+      item.image = item.image ? item.image : "placeholder";
       return item.save().then(function () {
         sendEvent("item_created", { item: req.body.item });
         return res.json({ item: item.toJSONFor(user) });
