@@ -53,7 +53,7 @@ router.get("/", auth.optional, function (req, res, next) {
     query.tagList = { $in: [req.query.tag] };
   }
   if (typeof req.query.tag !== "undefined") {
-    query.title = new RegExp(query.title, "i");
+    query.title = new RegExp(req.query.title, "i");
   }
   Promise.all([
     req.query.seller ? User.findOne({ username: req.query.seller }) : null,
