@@ -28,7 +28,6 @@ const ItemPreview = (props) => {
       props.favorite(item.slug);
     }
   };
-
   return (
     <div
       className="card bg-dark border-light p-3"
