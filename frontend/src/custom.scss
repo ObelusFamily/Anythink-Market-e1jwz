@@ -31,7 +31,27 @@ body {
   margin-top: 2 * $spacer;
   margin-bottom: 2 * $spacer;
 }
-
+.notFound-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.noItem {
+  img {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 30px;
+  }
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 150px;
+  background-color: #d9a4f84b;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
 .user-pic {
   height: 40px;
   width: 40px;
