@@ -34,13 +34,13 @@ const Banner = (props) => {
   };
   const Get = () => {
     return (
-      <p>
+      <div>
         A Place to
         <button className="get" onClick={() => setState({ visible: false })}>
           get
         </button>
         the cool stuff
-      </p>
+      </div>
     );
   };
   return (
