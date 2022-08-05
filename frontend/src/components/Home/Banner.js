@@ -36,7 +36,11 @@ const Banner = (props) => {
     return (
       <div>
         A Place to
-        <button className="get" onClick={() => setState({ visible: false })}>
+        <button
+          className="get"
+          id="get-part"
+          onClick={() => setState({ visible: false })}
+        >
           get
         </button>
         the cool stuff
